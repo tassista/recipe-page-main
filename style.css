@@ -23,14 +23,34 @@
 }
 
 img{
-    display: block;
+    /* display: block; */
     object-fit: cover;
-    height: 10rem;
+    height: 8%;
     width: 100%;
     margin-block-end: 2.5rem;
 }
+@media screen and (min-width:700px) {
+    img{
+        margin:2rem;
+        width: calc(100% - 4rem);
+        border-radius: 10px;
+    }
+    .wrapper{
+        /* padding: 2rem; */
+        margin: 10rem auto;
+        border-radius: 20px;
+    }
+    .inline-margin{
+        margin-inline: 0;
+    }
+}
 body{
     font-family: "Outfit", system-ui;
+    background-color: var(--stone-100);
+}
+.wrapper{
+    max-width: 700px;
+    background-color: var(--white);
 }
 section{
     color: var(--brown-800);
