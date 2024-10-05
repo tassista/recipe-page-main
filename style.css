@@ -1,0 +1,151 @@
+:root{
+--white: hsl(0, 0%, 100%);
+
+--stone-100: hsl(30, 54%, 90%);
+--stone-150: hsl(30, 18%, 87%);
+--stone-600: hsl(30, 10%, 34%);
+--stone-900: hsl(24, 5%, 18%);
+
+--brown-800: hsl(14, 45%, 36%);
+
+--rose-800: hsl(332, 51%, 32%);
+--rose-50: hsl(330, 100%, 98%);
+
+--spacing: 2rem;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    object-fit: cover;
+    height: 10rem;
+    width: 100%;
+    margin-block-end: 2.5rem;
+}
+body{
+    font-family: "Outfit", system-ui;
+}
+section{
+    color: var(--brown-800);
+}
+h1,
+h2{
+    font-family: "Young Serif", system-ui;
+    font-weight: 400;
+    line-height: 1;
+    margin-block-end: var(--spacing);
+}
+
+h1{
+    font-size: 2.25rem;
+    color: var(--stone-900);
+}
+h2{
+    font-size: 2rem;
+}
+span{
+    color: var(--stone-600);
+}
+.inline-margin{
+    margin-inline-start: var(--spacing);
+    margin-inline-end: 1.5rem;
+}
+
+.header__text{
+    color: var(--stone-600);
+    line-height: 1.4;
+    margin-block-end: var(--spacing);
+}
+
+.prep__time{
+    background: var(--rose-50);
+    margin-inline: var(--spacing);
+    border-radius: 10px;
+    padding:1.5rem  var(--spacing);
+    margin-block-end: var(--spacing);
+}
+.prep__time>*{
+    color: var(--rose-800);
+}
+.prep__time h3{
+    margin-block-end: 1rem;
+}
+.prep__time li:not(:last-child),
+.ingredients li{
+    margin-block-end: .725rem;
+}
+.prep__list li
+{
+    margin-inline-start: 1rem;
+}
+.prep__list li span,
+.ingredients li span{
+    margin-inline-start: .5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.ingredients{
+    padding-bottom: 1.5rem;
+}
+.ingredients ul{
+    padding-inline: 2rem;
+}
+.instructions{
+    border-block: 1px solid var(--stone-150); 
+    padding-block: 2rem;   
+}
+.instructions ol{
+    padding-inline-start: 1.5rem;
+}
+.instructions li{
+    padding-block-end: 1rem;
+}
+.instructions li span{
+    margin-inline-start: 1.2rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+ol li::marker{
+    font-weight: bold;
+}
+.nutrition{
+    margin-block: 2rem;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+caption{
+    color: var(--stone-600);
+    letter-spacing: .2px;
+    text-align: start;
+    padding-block-end: 1rem;
+}
+table tr:not(:last-child){
+    border-bottom: 1px solid rgb(222, 222, 222);
+} 
+table th,
+table td{
+    padding-block: 1rem;
+}
+table th{
+    color: var(--stone-600);
+    font-weight: 500;
+    width: 50%;
+    text-align: start;
+    padding-left: 2rem;    
+}
+table td{
+    font-weight: 700;
+    text-align: start;
+    padding-left: 1rem; 
+}
